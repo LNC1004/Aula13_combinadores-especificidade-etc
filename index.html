@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascata, Especificidade, Combinadores, Box Model e Display</title>
+<body>
+    <header>
+    <h1 id="inicio" class="titulos">Esplicação tags e propriedades novas </h1>
+    </header>
+    </body>
+    <div id="casc">
+        <h2 class="titulos" id="titulo-e">Regra da Cascata</h2>
+        <p>A regra da cascata é responsável por determinar qual estilo será aplicado a um elemento HTML quando houver vários outros iguais a ele. É um dos conceitos mais fundamentais e, ao mesmo tempo, mais difíceis para ser dominado por iniciantes.</p>
+
+        <p>A cascata segue três princípios principais que agem como sitema de pontuação:</p>
+
+        <ol>
+            <li><strong>Ordem e Origem:</strong> De onde vem o estilo?</li>
+            <li><strong>Especificidade:</strong> Quão específico é o seletor?</li>
+            <li><strong>Ordem de Código:</strong> Qual foi a última regra a ser declarada?</li>
+        </ol>
+    </div>
+
+    <div id="espec">
+        <h2 class="titulos">Especificidade</h2>
+        <p>É a forma como o navegador decide quais regras de CSS aplicar a um elemento.</p>
+        <p>A especificidade é feita em forma de pontos e é diferenciada pelos seletores:</p>
+        <ol>
+            <li><strong>Seletor pela tag:</strong> Tem a menor pontuação (0,0,1). Aponta todos os elementos de um tipo específico.</li>
+
+            <li><strong>Seletor pela classe:</strong> Tem uma pontuação média (0,1,0). Aponta um grupo de elementos que compartilham a mesma classe.</li>
+
+            <li><strong>Seletor pelo id:</strong> Tem a maior pontuação (1,0,0). Aponta um único elemento, já que os IDs são únicos.</li>
+        </ol>
+    </div>
+
+    <div id="combo">
+        <h2 class="titulos">Combinadores</h2>
+        <p>Combinadores são símbolos ou palavras-chave que combinam seletores para definir uma relação entre eles.</p>
+        <p>Existem três tipos principais de combinadores:</p>
+
+        <ol>
+            <li><strong>Combinador de espaço (.primeira h1):</strong> Seleciona todos os h1s descendentes de um elemento com a classe <span>.primeira</span></li>
+
+            <li><strong>Combinador Filho (.primeira > h1):</strong> Seleciona somente um h1 que seja um "filho" direto da classe <span>.primeira</span></li>
+
+            <li><strong>Combinador de soma (.primeira h1 + h1):</strong> Seleciona um h1 que seja um "irmão" do primeiro h1</li>
+        </ol>
+    </div>
+
+    <div id="pseudo">
+        <h2 class="titulos">Pseudo-classes</h2>
+        <p>Pseudo-classes são palavras-chave especiais no CSS que permitem selecionar um elemento com base em seu estado.</p>
+
+        <p>Pseudo-classes principais:</p>
+
+        <ul>
+            <li><strong>first-child:</strong> Seleciona o primeiro elemento filho de um elemento pai</li>
+
+            <li><strong>last-child:</strong> Seleciona o último elemento filho de um elemento pai</li>
+
+            <li><strong>nth-child(n):</strong> Seleciona o enésimo elemento filho, onde n pode ser um número, palavra-chave ou fómula</li>
+
+            <li><strong>nth-of-type(n):</strong> Selecion um elemento entre todos os elementos irmãos</li>
+        </ul>
+    </div>
+
+    <div id="display">
+        <h2 class="titulos">Display</h2>
+        <p>A propriedade <em>display</em> define o tipo de caixa de layout de um elemento.</p>
+        <p>Os valores mais comuns são:</p>
+        
+        <ul>
+            <li><strong>inline:</strong> Ocupa apenas o espaço necessário, não inicia em outra linha, ignora <em>width</em> e <em>height</em>, aceitam <em>margin</em> e <em>padding</em> somente nas laterais</li>
+
+            <li><strong>block:</strong> Ocupa 100% da largura disponível, sempre inicia em uma nova linha, aceita <em>width</em>, <em>height</em>, <em>margin</em> e <em>padding</em> em qualquer direção</li>
+        </ul>
+
+        <p><em>display-inline</em> usa por padrão: <em>a, span, em, strong, img, input, label, button</em>.</p>
+        <p>Já o <em>display-block</em> usa por padrão: <em>div, h1 a h6, p, ol, ul, li, header, footer, section, article, table</em>.</p>
+    </div>
+
+    <div id="serv">
+        <h2>Serventia</h2>
+        <p></p>
+    </div>
+    
+</body>
+</html>
